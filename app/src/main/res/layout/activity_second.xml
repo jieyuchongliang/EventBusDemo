@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="retrofitdemo.fujisoft.com.eventbusdemo.SecondActivity">
+
+    <Button
+        android:id="@+id/btn_send_event_bus_message"
+        android:text="发送非粘性事件，接收端必须提前注册EventBus，否则接收不到消息"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_send_nian_message"
+        android:text="发送粘性事件，接收端可以不提前注册EventBus,可以先发送事件后注册，注册时机视情况而定"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

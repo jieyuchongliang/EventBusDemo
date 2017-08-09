@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="retrofitdemo.fujisoft.com.eventbusdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="首页" />
+
+    <Button
+        android:id="@+id/bt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册EventBus（非粘性）同时跳转到页面二"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_nian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不注册EventBus，直接跳转到界面二"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_get_nian_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册EventBus用来接收粘性事件" />
+</LinearLayout>
